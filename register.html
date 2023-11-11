@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        /* Latar belakang berwarna abu-abu (#f5f5f5) */
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar {
+        background-color: #4a90e2;
+        /* Warna biru (#4a90e2) untuk navbar */
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .navbar-brand {
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .navbar-links {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      .navbar-link {
+        margin-right: 10px;
+      }
+
+      .navbar-link a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 10px;
+      }
+
+      .form-container {
+        max-width: 400px;
+        margin: 100px auto;
+        background-color: #fff;
+        /* Latar belakang putih (#fff) untuk kontainer formulir */
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        color: #666;
+      }
+
+      .form-group input[type="text"],
+      .form-group input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+      }
+
+      .btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #4a90e2;
+        /* Gunakan warna biru (#4a90e2) yang sama dengan navbar untuk tombol */
+        color: #fff;
+        text-align: center;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background-color: #357abd;
+        /* Warna biru sedikit lebih tua (#357abd) saat tombol dihover */
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <span class="navbar-brand">Palang Otomatis</span>
+    </nav>
+
+    <div class="form-container">
+      <img
+        src="img/icon.png"
+        style="height: 150px; width: 120px; display: block; margin: 0 auto"
+        alt=""
+      />
+
+      <h2 style="text-align: center; color: #4a90e2">Register</h2>
+      <!-- Gunakan warna biru (#4a90e2) yang sama dengan navbar untuk teks Login -->
+      <form action="register.php" method="POST">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            maxlength="20"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <button type="submit" class="btn">Register</button>
+        <p
+          style="
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-top: 10px;
+          "
+        >
+          Klik
+          <a href="index.html" style="color: #4a90e2; text-decoration: none"
+            >login</a
+          >
+          untuk login.
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
